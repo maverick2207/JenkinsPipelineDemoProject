@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" parallel="classes">
+    <test thread-count="4" name="MyTest">
+        <classes>
+            <class name="sampleProject.setup" />
+            <!--            <class name="docker.TestChrome1" />
+                        <class name="docker.TestChrome2" />-->
+            <class name="sampleProject.TestProject1" />
+            <class name="sampleProject.TestProject2" />
+        </classes>
+    </test>
+</suite>
